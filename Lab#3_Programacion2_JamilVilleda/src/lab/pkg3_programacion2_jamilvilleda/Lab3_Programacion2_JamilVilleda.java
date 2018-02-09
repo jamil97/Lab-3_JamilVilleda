@@ -17,7 +17,8 @@ public class Lab3_Programacion2_JamilVilleda {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String usuario, contra;
+        String usuario, contra, correo;
+        int id;
 
         ConnectiveLine CL = new ConnectiveLine();
         String opcion = "", opcion2 = "", opcion3 = "";
@@ -26,8 +27,11 @@ public class Lab3_Programacion2_JamilVilleda {
                     + "1- Registrar. \n"
                     + "2- LogIn. \n"
                     + "3- Salir. \n");
-
+            
             if (opcion.equals("1")) {
+                id = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero de identidad: "));
+                correo = JOptionPane.showInputDialog("Ingrese un correo: ");
+                CL.getPersonas().add(new Personas(id, correo));
                 opcion2 = JOptionPane.showInputDialog("Bienvenido, elija al usuario que desea registrar: \n"
                         + "a-) Administador \n"
                         + "b-) Freelance \n"
@@ -35,6 +39,8 @@ public class Lab3_Programacion2_JamilVilleda {
                 if (opcion2.equals("a")) {
                     usuario = JOptionPane.showInputDialog("Ingrese su nuevo nombre de usuario: ");
                     contra = JOptionPane.showInputDialog("Ingrese su nuevo nombre de usuario: ");
+                    
+
                 }
                 if (opcion2.equals("b")) {
                     opcion3 = JOptionPane.showInputDialog("Elija el tipo de Freelancer que desea agregar: \n"
