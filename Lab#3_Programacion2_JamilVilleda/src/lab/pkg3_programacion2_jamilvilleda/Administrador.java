@@ -12,6 +12,7 @@ package lab.pkg3_programacion2_jamilvilleda;
 public class Administrador {
     private String username;
     private String contra;
+    private int id;
 
     public Administrador() {
     }
