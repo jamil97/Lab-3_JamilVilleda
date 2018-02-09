@@ -9,7 +9,9 @@ package lab.pkg3_programacion2_jamilvilleda;
  *
  * @author Jamil
  */
-public class Administrador extends Personas{
+
+public class Administrador extends Personas {
+
     private String username;
     private String contra;
     private int id;

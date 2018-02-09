@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author Jamil
  */
-public class Freelance {
+public class Freelance extends Personas {
     private String nombre;
     private String contra, genero;
     private int edad;

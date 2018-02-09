@@ -12,9 +12,9 @@ import java.util.ArrayList;
  * @author Jamil
  */
 public class ProyectoPublicitario {
-    ArrayList<DesinadorGrafico> Diseñador_Grafico;
-    ArrayList<Fotografo> Fotografo;
-    ArrayList<MediosAudiovisuales> Medios_Audiovisuales;
+    ArrayList<DesinadorGrafico> Diseñador_Grafico = new ArrayList();
+    ArrayList<Fotografo> Fotografo = new ArrayList();
+    ArrayList<MediosAudiovisuales> Medios_Audiovisuales = new ArrayList();
 
     public ProyectoPublicitario() {
     }

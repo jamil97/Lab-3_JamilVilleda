@@ -12,8 +12,8 @@ import java.util.ArrayList;
  * @author Jamil
  */
 public class ProyectoComercial {
-    ArrayList<Contador> Contador;
-    ArrayList<Marketing> Marketing;
+    ArrayList<Contador> Contador = new ArrayList();
+    ArrayList<Marketing> Marketing = new ArrayList();
 
     public ProyectoComercial() {
     }
