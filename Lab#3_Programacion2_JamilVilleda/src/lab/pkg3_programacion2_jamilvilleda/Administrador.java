@@ -9,7 +9,7 @@ package lab.pkg3_programacion2_jamilvilleda;
  *
  * @author Jamil
  */
-public class Administrador {
+public class Administrador extends Personas{
     private String username;
     private String contra;
     private int id;
@@ -21,6 +21,12 @@ public class Administrador {
         this.username = username;
         this.contra = contra;
     }
+
+    public Administrador(int id, String correo) {
+        super(id, correo);
+    }
+    
+    
 
     public String getUsername() {
         return username;
