@@ -10,5 +10,6 @@ package lab.pkg3_programacion2_jamilvilleda;
  * @author Jamil
  */
 public class Administrador {
-    
+    private String username;
+    private String contra;
 }

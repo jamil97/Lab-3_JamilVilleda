@@ -5,10 +5,15 @@
  */
 package lab.pkg3_programacion2_jamilvilleda;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Jamil
  */
 public class DesinadorGrafico {
+    private ArrayList <ProyectoPublicitario> pp = new ArrayList();
+    private String universidad;
+    private String hobbies;
     
 }

@@ -10,5 +10,9 @@ package lab.pkg3_programacion2_jamilvilleda;
  * @author Jamil
  */
 public class Nacionales {
+    private String departamento;
+    private String municipio;
+    private String ciudad;
+    private String mision, vision;
     
 }
