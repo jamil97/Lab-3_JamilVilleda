@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author Jamil
  */
-public class ProyectoPublicitario {
+public class ProyectoPublicitario extends Proyecto{
     ArrayList<DesinadorGrafico> Diseñador_Grafico = new ArrayList();
     ArrayList<Fotografo> Fotografo = new ArrayList();
     ArrayList<MediosAudiovisuales> Medios_Audiovisuales = new ArrayList();
@@ -19,11 +19,11 @@ public class ProyectoPublicitario {
     public ProyectoPublicitario() {
     }
 
-    public ProyectoPublicitario(ArrayList<DesinadorGrafico> Diseñador_Grafico, ArrayList<Fotografo> Fotografo, ArrayList<MediosAudiovisuales> Medios_Audiovisuales) {
-        this.Diseñador_Grafico = Diseñador_Grafico;
-        this.Fotografo = Fotografo;
-        this.Medios_Audiovisuales = Medios_Audiovisuales;
+    public ProyectoPublicitario(String Nombre, String Empresa, String Precio, String Estado, String Descripcion, String Fecah_de_Inicio, String Fecha_de_Entrega) {
+        super(Nombre, Empresa, Precio, Estado, Descripcion, Fecah_de_Inicio, Fecha_de_Entrega);
     }
+
+    
 
     public ArrayList<DesinadorGrafico> getDiseñador_Grafico() {
         return Diseñador_Grafico;

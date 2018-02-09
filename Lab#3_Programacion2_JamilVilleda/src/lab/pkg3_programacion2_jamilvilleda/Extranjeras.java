@@ -17,11 +17,14 @@ public class Extranjeras extends Empresas{
     public Extranjeras() {
     }
 
-    public Extranjeras(String pais, String paginaweb, String ciudad) {
+    public Extranjeras(String pais, String paginaweb, String ciudad, String nombre, int telefono, String listaproyectos, String correoelectronico, String contra, String descripcion) {
+        super(nombre, telefono, listaproyectos, correoelectronico, contra, descripcion);
         this.pais = pais;
         this.paginaweb = paginaweb;
         this.ciudad = ciudad;
     }
+
+    
 
     public String getPais() {
         return pais;

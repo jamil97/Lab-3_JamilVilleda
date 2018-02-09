@@ -20,10 +20,13 @@ public class DesinadorGrafico extends Freelance {
     public DesinadorGrafico() {
     }
 
-    public DesinadorGrafico(String universidad, String hobbies) {
+    public DesinadorGrafico(String universidad, String hobbies, String nombre, String contra, String genero, int edad, double dinero, String ciudad, int telefono, int id, String correo) {
+        super(nombre, contra, genero, edad, dinero, ciudad, telefono, id, correo);
         this.universidad = universidad;
         this.hobbies = hobbies;
     }
+
+    
 
     public ArrayList<ProyectoPublicitario> getPp() {
         return pp;

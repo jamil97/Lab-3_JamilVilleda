@@ -11,16 +11,15 @@ import java.util.ArrayList;
  *
  * @author Jamil
  */
-public class ProyectoComercial {
+public class ProyectoComercial extends Proyecto{
     ArrayList<Contador> Contador = new ArrayList();
     ArrayList<Marketing> Marketing = new ArrayList();
 
     public ProyectoComercial() {
     }
 
-    public ProyectoComercial(ArrayList<Contador> Contador, ArrayList<Marketing> Marketing) {
-        this.Contador = Contador;
-        this.Marketing = Marketing;
+    public ProyectoComercial(String Nombre, String Empresa, String Precio, String Estado, String Descripcion, String Fecah_de_Inicio, String Fecha_de_Entrega) {
+        super(Nombre, Empresa, Precio, Estado, Descripcion, Fecah_de_Inicio, Fecha_de_Entrega);
     }
 
     public ArrayList<Contador> getContador() {

@@ -20,11 +20,14 @@ public class DesarolloWeb extends Freelance{
     public DesarolloWeb() {
     }
 
-    public DesarolloWeb(String lenguajeprogramacion, String universidad, String idioma) {
+    public DesarolloWeb(String lenguajeprogramacion, String universidad, String idioma, String nombre, String contra, String genero, int edad, double dinero, String ciudad, int telefono, int id, String correo) {
+        super(nombre, contra, genero, edad, dinero, ciudad, telefono, id, correo);
         this.lenguajeprogramacion = lenguajeprogramacion;
         this.universidad = universidad;
         this.idioma = idioma;
     }
+
+   
 
     public String getLenguajeprogramacion() {
         return lenguajeprogramacion;

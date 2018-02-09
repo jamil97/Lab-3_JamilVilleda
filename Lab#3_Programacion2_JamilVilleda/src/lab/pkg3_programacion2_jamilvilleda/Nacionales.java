@@ -9,7 +9,7 @@ package lab.pkg3_programacion2_jamilvilleda;
  *
  * @author Jamil
  */
-public class Nacionales {
+public class Nacionales extends Empresas{
     private String departamento;
     private String municipio;
     private String ciudad;
@@ -18,13 +18,15 @@ public class Nacionales {
     public Nacionales() {
     }
 
-    public Nacionales(String departamento, String municipio, String ciudad, String mision, String vision) {
+    public Nacionales(String departamento, String municipio, String ciudad, String mision, String vision, String nombre, int telefono, String listaproyectos, String correoelectronico, String contra, String descripcion) {
+        super(nombre, telefono, listaproyectos, correoelectronico, contra, descripcion);
         this.departamento = departamento;
         this.municipio = municipio;
         this.ciudad = ciudad;
         this.mision = mision;
         this.vision = vision;
     }
+
 
     public String getDepartamento() {
         return departamento;
@@ -65,6 +67,8 @@ public class Nacionales {
     public void setVision(String vision) {
         this.vision = vision;
     }
+    
+    
 
     @Override
     public String toString() {

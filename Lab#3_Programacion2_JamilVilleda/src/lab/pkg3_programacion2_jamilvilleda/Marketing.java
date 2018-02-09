@@ -11,16 +11,19 @@ import java.util.ArrayList;
  *
  * @author Jamil
  */
-public class Marketing {
+public class Marketing extends Freelance{
     private ArrayList <ProyectoComercial> pc = new ArrayList();
     private String redsocial;
 
     public Marketing() {
     }
 
-    public Marketing(String redsocial) {
+    public Marketing(String redsocial, String nombre, String contra, String genero, int edad, double dinero, String ciudad, int telefono, int id, String correo) {
+        super(nombre, contra, genero, edad, dinero, ciudad, telefono, id, correo);
         this.redsocial = redsocial;
     }
+
+    
 
     public ArrayList<ProyectoComercial> getPc() {
         return pc;

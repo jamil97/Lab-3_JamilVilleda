@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author Jamil
  */
-public class Contador {
+public class Contador extends Freelance{
     ArrayList <ProyectoComercial> pc = new ArrayList();
     private String universidad;
     private boolean pm; //Boolean perito mercantiles
@@ -20,11 +20,14 @@ public class Contador {
     public Contador() {
     }
 
-    public Contador(String universidad, boolean pm, String hobbies) {
+    public Contador(String universidad, boolean pm, String hobbies, String nombre, String contra, String genero, int edad, double dinero, String ciudad, int telefono, int id, String correo) {
+        super(nombre, contra, genero, edad, dinero, ciudad, telefono, id, correo);
         this.universidad = universidad;
         this.pm = pm;
         this.hobbies = hobbies;
     }
+
+    
 
     public ArrayList<ProyectoComercial> getPc() {
         return pc;
