@@ -5,10 +5,14 @@
  */
 package lab.pkg3_programacion2_jamilvilleda;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Jamil
  */
 public class MediosAudiovisuales {
-    
+    private ArrayList <ProyectoPublicitario> pp = new ArrayList();
+    private String marca;
+    private String modelovideo;
 }

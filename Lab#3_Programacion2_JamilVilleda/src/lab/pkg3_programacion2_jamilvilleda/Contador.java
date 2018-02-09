@@ -5,10 +5,16 @@
  */
 package lab.pkg3_programacion2_jamilvilleda;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Jamil
  */
 public class Contador {
+    ArrayList <ProyectoComercial> pc = new ArrayList();
+    private String universidad;
+    private boolean pm; //Boolean perito mercantiles
+    private String hobbies;
     
 }
