@@ -15,4 +15,5 @@ public class Fotografo {
     private ArrayList <ProyectoPublicitario> pp = new ArrayList();
     private String marca;
     private String modelocamara;
+    
 }

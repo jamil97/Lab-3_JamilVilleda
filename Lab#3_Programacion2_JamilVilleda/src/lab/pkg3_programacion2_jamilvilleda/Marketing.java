@@ -5,10 +5,14 @@
  */
 package lab.pkg3_programacion2_jamilvilleda;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Jamil
  */
 public class Marketing {
+    private ArrayList <ProyectoComercial> pc = new ArrayList();
+    private String redsocial;
     
 }
