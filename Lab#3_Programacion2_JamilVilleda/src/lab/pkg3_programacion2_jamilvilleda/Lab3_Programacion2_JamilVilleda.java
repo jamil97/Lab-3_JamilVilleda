@@ -36,10 +36,11 @@ public class Lab3_Programacion2_JamilVilleda {
                         + "a-) Administador \n"
                         + "b-) Freelance \n"
                         + "c-) Empresa \n");
+                
                 if (opcion2.equals("a")) {
                     usuario = JOptionPane.showInputDialog("Ingrese su nuevo nombre de usuario: ");
                     contra = JOptionPane.showInputDialog("Ingrese su nuevo nombre de usuario: ");
-                    
+                    CL.getPersonas().add(new Administrador(usuario, contra));
 
                 }
                 if (opcion2.equals("b")) {
