@@ -18,6 +18,7 @@ public class Lab3_Programacion2_JamilVilleda {
      */
     public static void main(String[] args) {
         String usuario, contra;
+
         ConnectiveLine CL = new ConnectiveLine();
         String opcion = "", opcion2 = "", opcion3 = "";
         while (!opcion.equals("4")) {
@@ -32,7 +33,8 @@ public class Lab3_Programacion2_JamilVilleda {
                         + "b-) Freelance \n"
                         + "c-) Empresa \n");
                 if (opcion2.equals("a")) {
-
+                    usuario = JOptionPane.showInputDialog("Ingrese su nuevo nombre de usuario: ");
+                    contra = JOptionPane.showInputDialog("Ingrese su nuevo nombre de usuario: ");
                 }
                 if (opcion2.equals("b")) {
                     opcion3 = JOptionPane.showInputDialog("Elija el tipo de Freelancer que desea agregar: \n"
@@ -111,7 +113,26 @@ public class Lab3_Programacion2_JamilVilleda {
                     usuario = JOptionPane.showInputDialog("Ingrese el nombre de usuario: \n");
                     contra = JOptionPane.showInputDialog("Ingrese la contra: \n");
                     if (true) {
-                        
+                        opcion3 = JOptionPane.showInputDialog("a-) Crear un dato de proyecto: \n"
+                                + "b-) Modificar un dato de proyecto. \n"
+                                + "c-) Eliminarse un dato de proyecto. \n"
+                                + "d-) Modificar los datos actuales de la empresa. \n"
+                                + "e-) Eliminar la empresa. \n");
+                        if (opcion3.equals("a")) {
+
+                        }
+                        if (opcion3.equals("b")) {
+
+                        }
+                        if (opcion3.equals("c")) {
+
+                        }
+                        if (opcion3.equals("d")) {
+
+                        }
+                        if (opcion3.equals("e")) {
+
+                        }
                     }
                 }
             }
