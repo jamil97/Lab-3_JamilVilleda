@@ -11,8 +11,9 @@ import java.util.ArrayList;
  *
  * @author Jamil
  */
-public class DesinadorGrafico {
-    private ArrayList <ProyectoPublicitario> pp = new ArrayList();
+public class DesinadorGrafico extends Freelance {
+
+    private ArrayList<ProyectoPublicitario> pp = new ArrayList();
     private String universidad;
     private String hobbies;
 
@@ -52,6 +53,5 @@ public class DesinadorGrafico {
     public String toString() {
         return "DesinadorGrafico{" + "pp=" + pp + ", universidad=" + universidad + ", hobbies=" + hobbies + '}';
     }
-    
-    
+
 }

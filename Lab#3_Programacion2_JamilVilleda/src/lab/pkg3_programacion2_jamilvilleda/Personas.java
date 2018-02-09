@@ -10,9 +10,10 @@ package lab.pkg3_programacion2_jamilvilleda;
  * @author Jamil
  */
 public class Personas {
-
     private int id;
     private String correo;
+   
+
 
     public Personas() {
     }
@@ -41,6 +42,7 @@ public class Personas {
 //    public Administrador getAdmin() {
 //        return admin;
 //    }
+
 //    public void setAdmin(Administrador admin) {
 //        this.admin = admin;
 //    }
@@ -52,9 +54,11 @@ public class Personas {
 //    public void setFreelancer(Freelance freelancer) {
 //        this.freelancer = freelancer;
 //    }
+
     @Override
     public String toString() {
-        return "Personas{" + "id=" + id + ", correo=" + correo;
+        return "Personas{" + "id=" + id + ", correo=" + correo ;
     }
-
+    
+    
 }

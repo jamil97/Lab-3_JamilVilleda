@@ -12,24 +12,20 @@ import java.util.ArrayList;
  * @author Jamil
  */
 public class Freelance extends Personas {
+
     private String nombre;
     private String contra, genero;
     private int edad;
-    private ArrayList <Empresas> emp = new ArrayList();
+    private ArrayList<Empresas> emp = new ArrayList();
     private double dinero;
     private String ciudad;
     private int telefono;
-    private DesarolloWeb desarollador;
-    private DesinadorGrafico DG;
-    private Fotografo f;
-    private MediosAudiovisuales ma;
-    private Marketing m;
-    private Contador c;
 
     public Freelance() {
     }
 
-    public Freelance(String nombre, String contra, String genero, int edad, double dinero, String ciudad, int telefono, DesarolloWeb desarollador, DesinadorGrafico DG, Fotografo f, MediosAudiovisuales ma, Marketing m, Contador c) {
+    public Freelance(String nombre, String contra, String genero, int edad, double dinero, String ciudad, int telefono, int id, String correo) {
+        super(id, correo);
         this.nombre = nombre;
         this.contra = contra;
         this.genero = genero;
@@ -37,12 +33,6 @@ public class Freelance extends Personas {
         this.dinero = dinero;
         this.ciudad = ciudad;
         this.telefono = telefono;
-        this.desarollador = desarollador;
-        this.DG = DG;
-        this.f = f;
-        this.ma = ma;
-        this.m = m;
-        this.c = c;
     }
 
     public String getNombre() {
@@ -109,58 +99,9 @@ public class Freelance extends Personas {
         this.telefono = telefono;
     }
 
-    public DesarolloWeb getDesarollador() {
-        return desarollador;
-    }
-
-    public void setDesarollador(DesarolloWeb desarollador) {
-        this.desarollador = desarollador;
-    }
-
-    public DesinadorGrafico getDG() {
-        return DG;
-    }
-
-    public void setDG(DesinadorGrafico DG) {
-        this.DG = DG;
-    }
-
-    public Fotografo getF() {
-        return f;
-    }
-
-    public void setF(Fotografo f) {
-        this.f = f;
-    }
-
-    public MediosAudiovisuales getMa() {
-        return ma;
-    }
-
-    public void setMa(MediosAudiovisuales ma) {
-        this.ma = ma;
-    }
-
-    public Marketing getM() {
-        return m;
-    }
-
-    public void setM(Marketing m) {
-        this.m = m;
-    }
-
-    public Contador getC() {
-        return c;
-    }
-
-    public void setC(Contador c) {
-        this.c = c;
-    }
-
     @Override
     public String toString() {
-        return "Freelance{" + "nombre=" + nombre + ", contra=" + contra + ", genero=" + genero + ", edad=" + edad + ", emp=" + emp + ", dinero=" + dinero + ", ciudad=" + ciudad + ", telefono=" + telefono + ", desarollador=" + desarollador + ", DG=" + DG + ", f=" + f + ", ma=" + ma + ", m=" + m + ", c=" + c + '}';
+        return "Freelance{" + "nombre=" + nombre + ", contra=" + contra + ", genero=" + genero + ", edad=" + edad + ", emp=" + emp + ", dinero=" + dinero + ", ciudad=" + ciudad + ", telefono=" + telefono + '}';
     }
-    
-    
+
 }
