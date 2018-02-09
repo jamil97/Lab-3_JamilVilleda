@@ -16,5 +16,53 @@ public class Contador {
     private String universidad;
     private boolean pm; //Boolean perito mercantiles
     private String hobbies;
+
+    public Contador() {
+    }
+
+    public Contador(String universidad, boolean pm, String hobbies) {
+        this.universidad = universidad;
+        this.pm = pm;
+        this.hobbies = hobbies;
+    }
+
+    public ArrayList<ProyectoComercial> getPc() {
+        return pc;
+    }
+
+    public void setPc(ArrayList<ProyectoComercial> pc) {
+        this.pc = pc;
+    }
+
+    public String getUniversidad() {
+        return universidad;
+    }
+
+    public void setUniversidad(String universidad) {
+        this.universidad = universidad;
+    }
+
+    public boolean isPm() {
+        return pm;
+    }
+
+    public void setPm(boolean pm) {
+        this.pm = pm;
+    }
+
+    public String getHobbies() {
+        return hobbies;
+    }
+
+    public void setHobbies(String hobbies) {
+        this.hobbies = hobbies;
+    }
+
+    @Override
+    public String toString() {
+        return "Contador{" + "pc=" + pc + ", universidad=" + universidad + ", pm=" + pm + ", hobbies=" + hobbies + '}';
+    }
+    
+    
     
 }

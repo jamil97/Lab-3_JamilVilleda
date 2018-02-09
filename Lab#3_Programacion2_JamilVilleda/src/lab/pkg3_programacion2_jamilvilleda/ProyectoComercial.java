@@ -14,4 +14,35 @@ import java.util.ArrayList;
 public class ProyectoComercial {
     ArrayList<Contador> Contador;
     ArrayList<Marketing> Marketing;
+
+    public ProyectoComercial() {
+    }
+
+    public ProyectoComercial(ArrayList<Contador> Contador, ArrayList<Marketing> Marketing) {
+        this.Contador = Contador;
+        this.Marketing = Marketing;
+    }
+
+    public ArrayList<Contador> getContador() {
+        return Contador;
+    }
+
+    public void setContador(ArrayList<Contador> Contador) {
+        this.Contador = Contador;
+    }
+
+    public ArrayList<Marketing> getMarketing() {
+        return Marketing;
+    }
+
+    public void setMarketing(ArrayList<Marketing> Marketing) {
+        this.Marketing = Marketing;
+    }
+
+    @Override
+    public String toString() {
+        return "ProyectoComercial{" + "Contador=" + Contador + ", Marketing=" + Marketing + '}';
+    }
+    
+    
 }
