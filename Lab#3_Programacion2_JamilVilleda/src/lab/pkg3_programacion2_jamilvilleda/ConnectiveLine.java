@@ -5,10 +5,15 @@
  */
 package lab.pkg3_programacion2_jamilvilleda;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Jamil
  */
 public class ConnectiveLine {
-    
+
+    ArrayList<Empresas> Empresas;
+    ArrayList<Personas> Personas;
+    ArrayList<Ingresos> Ingresos;
 }

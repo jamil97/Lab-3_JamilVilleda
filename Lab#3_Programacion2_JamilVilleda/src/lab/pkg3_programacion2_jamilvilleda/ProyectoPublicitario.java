@@ -14,4 +14,6 @@ import java.util.ArrayList;
 public class ProyectoPublicitario {
     ArrayList<DesinadorGrafico> Diseñador_Grafico;
     ArrayList<Fotografo> Fotografo;
+    ArrayList<MediosAudiovisuales> Medios_Audiovisuales;
+    
 }
