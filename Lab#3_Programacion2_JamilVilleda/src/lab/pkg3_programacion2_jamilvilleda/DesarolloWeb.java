@@ -5,10 +5,15 @@
  */
 package lab.pkg3_programacion2_jamilvilleda;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Jamil
  */
 public class DesarolloWeb {
-    
+    private String lenguajeprogramacion;
+    private String universidad;
+    private String idioma;
+    private ArrayList <ProyectoWeb> pw = new ArrayList();
 }

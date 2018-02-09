@@ -10,5 +10,8 @@ package lab.pkg3_programacion2_jamilvilleda;
  * @author Jamil
  */
 public class Personas {
-    
+    private int id;
+    private String correo;
+    private Administrador admin;
+    private Freelance freelancer;
 }
