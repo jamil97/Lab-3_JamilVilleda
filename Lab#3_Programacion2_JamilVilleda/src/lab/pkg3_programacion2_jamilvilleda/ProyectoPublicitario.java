@@ -5,10 +5,13 @@
  */
 package lab.pkg3_programacion2_jamilvilleda;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Jamil
  */
 public class ProyectoPublicitario {
-    
+    ArrayList<DesinadorGrafico> Diseñador_Grafico;
+    ArrayList<Fotografo> Fotografo;
 }

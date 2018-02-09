@@ -5,10 +5,12 @@
  */
 package lab.pkg3_programacion2_jamilvilleda;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Jamil
  */
 public class ProyectoWeb {
-    
+    ArrayList<DesarolloWeb> Desarrollador_Web;
 }
