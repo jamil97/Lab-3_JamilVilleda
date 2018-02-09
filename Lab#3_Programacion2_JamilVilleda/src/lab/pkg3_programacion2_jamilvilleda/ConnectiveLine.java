@@ -13,7 +13,7 @@ import java.util.ArrayList;
  */
 public class ConnectiveLine {
 
-    ArrayList<Empresas> Empresas;
-    ArrayList<Personas> Personas;
-    ArrayList<Ingresos> Ingresos;
+    private ArrayList<Empresas> Empresas;
+    private ArrayList<Personas> Personas;
+    private ArrayList<Ingresos> Ingresos;
 }

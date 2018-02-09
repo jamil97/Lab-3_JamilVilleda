@@ -12,8 +12,8 @@ import java.util.ArrayList;
  * @author Jamil
  */
 public class Ingresos {
-    ArrayList<Empresas> Empresa;
-    ArrayList<Freelance> Freelance;
+    private ArrayList<Empresas> Empresa;
+    private ArrayList<Freelance> Freelance;
     private int Dinero;
     private int Ingresos;
 }
