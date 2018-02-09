@@ -9,7 +9,7 @@ package lab.pkg3_programacion2_jamilvilleda;
  *
  * @author Jamil
  */
-public class Extranjeras {
+public class Extranjeras extends Empresas{
     private String pais;
     private String paginaweb;
     private String ciudad;
@@ -51,6 +51,7 @@ public class Extranjeras {
     public String toString() {
         return "Extranjeras{" + "pais=" + pais + ", paginaweb=" + paginaweb + ", ciudad=" + ciudad + '}';
     }
+    
     
     
 }

@@ -9,7 +9,7 @@ package lab.pkg3_programacion2_jamilvilleda;
  *
  * @author Jamil
  */
-public class Empresas {
+public class Empresas  {
     private String nombre;
     private int telefono;
     private String listaproyectos;
