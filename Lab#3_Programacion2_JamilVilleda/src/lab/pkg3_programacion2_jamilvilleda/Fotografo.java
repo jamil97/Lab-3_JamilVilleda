@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author Jamil
  */
-public class Fotografo {
+public class Fotografo extends Freelance{
     private ArrayList <ProyectoPublicitario> pp = new ArrayList();
     private String marca;
     private String modelocamara;

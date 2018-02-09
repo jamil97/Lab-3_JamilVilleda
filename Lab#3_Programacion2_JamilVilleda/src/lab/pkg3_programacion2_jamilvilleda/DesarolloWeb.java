@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author Jamil
  */
-public class DesarolloWeb {
+public class DesarolloWeb extends Freelance{
     private String lenguajeprogramacion;
     private String universidad;
     private String idioma;

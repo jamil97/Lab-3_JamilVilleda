@@ -27,7 +27,7 @@ public class Lab3_Programacion2_JamilVilleda {
                     + "1- Registrar. \n"
                     + "2- LogIn. \n"
                     + "3- Salir. \n");
-            
+
             if (opcion.equals("1")) {
                 id = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero de identidad: "));
                 correo = JOptionPane.showInputDialog("Ingrese un correo: ");
@@ -36,10 +36,10 @@ public class Lab3_Programacion2_JamilVilleda {
                         + "a-) Administador \n"
                         + "b-) Freelance \n"
                         + "c-) Empresa \n");
-                
+
                 if (opcion2.equals("a")) {
                     usuario = JOptionPane.showInputDialog("Ingrese su nuevo nombre de usuario: ");
-                    contra = JOptionPane.showInputDialog("Ingrese su nuevo nombre de usuario: ");
+                    contra = JOptionPane.showInputDialog("Ingrese su nuevo contra: ");
                     CL.getPersonas().add(new Administrador(usuario, contra));
                     
 
@@ -69,86 +69,93 @@ public class Lab3_Programacion2_JamilVilleda {
                 if (opcion2.equals("a")) {
                     usuario = JOptionPane.showInputDialog("Ingrese el nombre de usuario: \n");
                     contra = JOptionPane.showInputDialog("Ingrese la contra: \n");
-                    if (true) {
-                        opcion3 = JOptionPane.showInputDialog("a-) Visualizar todos los ingresos de la empresa: \n"
-                                + "b-) Modificar sus datos. \n"
-                                + "c-) Eliminarse del sistema. \n");
-                        if (opcion3.equals("a")) {
+                    for (int i = 0; i < CL.getPersonas().size(); i++) {
+                        if (CL.getPersonas().get(i).getAdmin().getUsername().equals(usuario) && CL.getPersonas().get(i).getAdmin().getContra().equals(contra)) { //Validacion de que el usuario este
 
-                        }
-                        if (opcion3.equals("b")) {
+                            while (!opcion3.equalsIgnoreCase("d")) { //Valida que haga log out
+                                opcion3 = JOptionPane.showInputDialog("a-) Visualizar todos los ingresos de la empresa: \n"
+                                        + "b-) Modificar sus datos. \n"
+                                        + "c-) Eliminarse del sistema. \n"
+                                        + "d-) Log Out \n");
+                                if (opcion3.equals("a")) {
 
-                        }
-                        if (opcion3.equals("c")) {
+                                }
+                                if (opcion3.equals("b")) {
 
+                                }
+                                if (opcion3.equals("c")) {
+
+                                }
+                            }
                         }
+                        
+                        if (opcion2.equals("b")) {
+                            opcion3 = JOptionPane.showInputDialog("Elija el tipo de Freelancer que desea hacer LogIn: \n"
+                                    + "a-) Desarollador Web \n"
+                                    + "b-) Fotografo \n"
+                                    + "c-) Disenador Grafico \n"
+                                    + "d-) Medios Audiovisuales \n"
+                                    + "e-) Marketing \n"
+                                    + "f-) Contador \n");
+                            if (opcion3.equals("a")) {
+                                usuario = JOptionPane.showInputDialog("Ingrese el nombre de usuario: ");
+                                contra = JOptionPane.showInputDialog("Ingrese la contra: ");
+                            }
+                            if (opcion3.equals("b")) {
+                                usuario = JOptionPane.showInputDialog("Ingrese el nombre de usuario: ");
+                                contra = JOptionPane.showInputDialog("Ingrese la contra: ");
+                            }
+                            if (opcion3.equals("c")) {
+                                usuario = JOptionPane.showInputDialog("Ingrese el nombre de usuario: ");
+                                contra = JOptionPane.showInputDialog("Ingrese la contra: ");
+                            }
+                            if (opcion3.equals("d")) {
+                                usuario = JOptionPane.showInputDialog("Ingrese el nombre de usuario: ");
+                                contra = JOptionPane.showInputDialog("Ingrese la contra: ");
+                            }
+                            if (opcion3.equals("e")) {
+                                usuario = JOptionPane.showInputDialog("Ingrese el nombre de usuario: ");
+                                contra = JOptionPane.showInputDialog("Ingrese la contra: ");
+                            }
+                            if (opcion3.equals("f")) {
+                                usuario = JOptionPane.showInputDialog("Ingrese el nombre de usuario: ");
+                                contra = JOptionPane.showInputDialog("Ingrese la contra: ");
+                            }
+                        }
+                        if (opcion2.equals("c")) {
+                            usuario = JOptionPane.showInputDialog("Ingrese el nombre de usuario: \n");
+                            contra = JOptionPane.showInputDialog("Ingrese la contra: \n");
+                            if (true) {
+                                opcion3 = JOptionPane.showInputDialog("a-) Crear un dato de proyecto: \n"
+                                        + "b-) Modificar un dato de proyecto. \n"
+                                        + "c-) Eliminarse un dato de proyecto. \n"
+                                        + "d-) Modificar los datos actuales de la empresa. \n"
+                                        + "e-) Eliminar la empresa. \n");
+                                if (opcion3.equals("a")) {
+
+                                }
+                                if (opcion3.equals("b")) {
+
+                                }
+                                if (opcion3.equals("c")) {
+
+                                }
+                                if (opcion3.equals("d")) {
+
+                                }
+                                if (opcion3.equals("e")) {
+
+                                }
+                            }
+                        }
+                    }
+                    if (opcion.equals("3")) {
+                        System.exit(0);
                     }
                 }
-                if (opcion2.equals("b")) {
-                    opcion3 = JOptionPane.showInputDialog("Elija el tipo de Freelancer que desea hacer LogIn: \n"
-                            + "a-) Desarollador Web \n"
-                            + "b-) Fotografo \n"
-                            + "c-) Disenador Grafico \n"
-                            + "d-) Medios Audiovisuales \n"
-                            + "e-) Marketing \n"
-                            + "f-) Contador \n");
-                    if (opcion3.equals("a")) {
-                        usuario = JOptionPane.showInputDialog("Ingrese el nombre de usuario: ");
-                        contra = JOptionPane.showInputDialog("Ingrese la contra: ");
-                    }
-                    if (opcion3.equals("b")) {
-                        usuario = JOptionPane.showInputDialog("Ingrese el nombre de usuario: ");
-                        contra = JOptionPane.showInputDialog("Ingrese la contra: ");
-                    }
-                    if (opcion3.equals("c")) {
-                        usuario = JOptionPane.showInputDialog("Ingrese el nombre de usuario: ");
-                        contra = JOptionPane.showInputDialog("Ingrese la contra: ");
-                    }
-                    if (opcion3.equals("d")) {
-                        usuario = JOptionPane.showInputDialog("Ingrese el nombre de usuario: ");
-                        contra = JOptionPane.showInputDialog("Ingrese la contra: ");
-                    }
-                    if (opcion3.equals("e")) {
-                        usuario = JOptionPane.showInputDialog("Ingrese el nombre de usuario: ");
-                        contra = JOptionPane.showInputDialog("Ingrese la contra: ");
-                    }
-                    if (opcion3.equals("f")) {
-                        usuario = JOptionPane.showInputDialog("Ingrese el nombre de usuario: ");
-                        contra = JOptionPane.showInputDialog("Ingrese la contra: ");
-                    }
-                }
-                if (opcion2.equals("c")) {
-                    usuario = JOptionPane.showInputDialog("Ingrese el nombre de usuario: \n");
-                    contra = JOptionPane.showInputDialog("Ingrese la contra: \n");
-                    if (true) {
-                        opcion3 = JOptionPane.showInputDialog("a-) Crear un dato de proyecto: \n"
-                                + "b-) Modificar un dato de proyecto. \n"
-                                + "c-) Eliminarse un dato de proyecto. \n"
-                                + "d-) Modificar los datos actuales de la empresa. \n"
-                                + "e-) Eliminar la empresa. \n");
-                        if (opcion3.equals("a")) {
 
-                        }
-                        if (opcion3.equals("b")) {
-
-                        }
-                        if (opcion3.equals("c")) {
-
-                        }
-                        if (opcion3.equals("d")) {
-
-                        }
-                        if (opcion3.equals("e")) {
-
-                        }
-                    }
-                }
             }
-            if (opcion.equals("3")) {
-                System.exit(0);
-            }
+
         }
-
     }
-
 }

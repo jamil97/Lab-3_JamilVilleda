@@ -13,9 +13,9 @@ import java.util.ArrayList;
  */
 public class ConnectiveLine {
 
-    private ArrayList<Empresas> Empresas;
-    private ArrayList<Personas> Personas;
-    private ArrayList<Ingresos> Ingresos;
+    private ArrayList<Empresas> Empresas = new ArrayList();
+    private ArrayList<Personas> Personas = new ArrayList();
+    private ArrayList<Ingresos> Ingresos = new ArrayList();
 
     public ConnectiveLine() {
     }
@@ -54,6 +54,5 @@ public class ConnectiveLine {
     public String toString() {
         return "ConnectiveLine{" + "Empresas=" + Empresas + ", Personas=" + Personas + ", Ingresos=" + Ingresos + '}';
     }
-    
-    
+
 }
